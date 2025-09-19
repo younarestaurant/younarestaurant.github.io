@@ -16,20 +16,8 @@ body {
   background: var(--body-background-color);
   color: var(--font-color);
   transition: background 0.5s, color 0.5s;
-  /* animation: transitionIn 0.75s; */
 }
 
-/* @keyframes transitionIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-} */
 .home-logo {
   display: flex;
   width: 60%;
@@ -242,19 +230,29 @@ footer a {
   text-decoration: none;
   font-size: 1.4rem;
   color: #fff;
-  transition: color .2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 footer a:hover {
-     color: rgb(202, 140, 61); 
+  color: rgb(202, 140, 61);
 }
 
 .footer-logo {
   width: 30%;
+  margin-bottom: 2rem !important;
 }
 
 .footer-right iframe {
   width: 100%;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+
+.credit,
+.credit a {
+  font-size: 0.5rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -345,6 +343,10 @@ footer a:hover {
     flex-direction: column-reverse;
   }
 
+  footer p {
+    font-size: 1.1rem;
+  }
+
   .footer-right {
     padding: 1rem;
   }
@@ -353,5 +355,11 @@ footer a:hover {
     display: block;
     margin: 0 auto;
     width: 50%;
+  }
+
+  .copyright,
+  .credit,
+  .credit a {
+    text-align: center;
   }
 }
