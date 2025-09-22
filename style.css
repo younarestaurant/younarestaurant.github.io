@@ -47,7 +47,7 @@ nav ul li a {
 }
 
 .fa-bars {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .fa-bars:hover {
@@ -92,12 +92,23 @@ nav .fa-solid {
 }
 
 #header-section {
-  background-image: url("dining-room.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.front {
+  flex: 1;
+  width: 100%;
+   min-height: 0; 
+}
+
+.front img {
+  width: 100%;
+  height: 100%; /* ← important */
+  object-fit: cover; /* fills space without squishing */
+  display: block; /* removes bottom inline gap */
 }
 
 #about-section {
@@ -115,8 +126,9 @@ nav .fa-solid {
 }
 
 .about-section-inner img {
-  width: 90%;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50%; */
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px,
     rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
 }
@@ -204,7 +216,7 @@ nav .fa-solid {
 
 .gallery-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   padding: 2rem;
   display: flex;
@@ -376,10 +388,10 @@ footer a:hover {
     line-height: 1.2;
   }
 
-  .about-section-inner img {
+  /* .about-section-inner img {
     width: 90%;
     margin-bottom: 2rem;
-  }
+  } */
 
   #name-section {
     padding: 2rem;
