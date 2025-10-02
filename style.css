@@ -326,7 +326,7 @@ nav .fa-solid {
 }
 
 footer {
-  background-color: rgb(202, 140, 61);
+  background-color: rgb(255, 171,32);
   transition: background-color .7s ease-in-out;
   width: 100%;
   display: flex;
@@ -359,7 +359,7 @@ footer p {
 .fa-brands {
   font-size: 1.7rem;
   margin-right: 8px;
-  color: rgb(202, 140, 61);
+  color: rgb(255, 171,32);
 }
 
 footer a {
@@ -370,7 +370,7 @@ footer a {
 }
 
 footer a:hover {
-  color: rgb(202, 140, 61);
+  color: rgb(255, 171,32);
 }
 
 .footer-logo {
