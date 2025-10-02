@@ -70,7 +70,7 @@ nav .fa-solid {
 .desktop-nav a {
   text-decoration: none;
   color: #000;
-  font-size: 2rem;
+  font-size: 1.8rem;
   transition: color 0.3s ease-in-out;
 }
 
@@ -109,15 +109,15 @@ nav .fa-solid {
   height: 100%;
   object-fit: cover; /* fills space without squishing */
   display: block; /* removes bottom inline gap */
-  padding: 0 .2rem;
 }
 
 #about-section {
   width: 100%;
   height: 100vh;
   display: flex;
-  padding: .2rem;
-    gap: .2rem;
+  padding: 2rem;
+  gap: 2rem;
+    background-color: rgb(245, 245, 245);
 }
 
 .about-section-inner {
@@ -138,7 +138,6 @@ nav .fa-solid {
 
 .about-section-inner.left {
   padding: 2rem;
-  background-color: rgb(248, 248, 248);
 }
 
 .about-section-inner.left h2 {
@@ -167,7 +166,7 @@ nav .fa-solid {
   align-items: center;
   gap: 2rem;
   font-size: 2.3rem;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   position: relative;
   background-color: rgb(255, 255, 255);
   color: #000000;
@@ -175,16 +174,65 @@ nav .fa-solid {
 
 #menu-section {
   width: 100%;
-  height: 100vh;
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(245, 245, 245);
   /* background-image: url("plaid-bkgd.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
   display: flex;
   justify-content: center;
-  padding: 4rem;
+  /* padding: 4rem; */
   text-align: center;
+    margin: 4rem 0;
+}
+
+/* Pics Slide Scroll */
+/*** LOGO SCROLL ***/
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.pics {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+}
+
+.pics:hover .pics-slide {
+  animation-play-state: paused;
+}
+
+.pics-slide {
+ display: flex;
+  animation: 35s slide infinite linear;
+}
+
+.pics-slide div {
+  width: 300px;
+    vertical-align: middle; /
+}
+
+.pics-slide img {
+  width: 40px;
+}
+
+.francais {
+  font-size: 1.7rem;
+  color: rgb(0, 135, 253);
+}
+
+.anglais {
+    font-size: 1.4rem;
+    font-style: italic;
 }
 
 .menu-container {
