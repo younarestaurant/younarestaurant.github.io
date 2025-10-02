@@ -418,6 +418,39 @@
 
         year.innerHTML = currentYear;
 
+        const footer = document.querySelector('#contact-section');
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.intersectionRatio >= 0.3) {
+                    footer.classList.add('in-view');
+                } else {
+                    footer.classList.remove('in-view');
+                }
+            },
+            {
+                threshold: [0, 0.3, 1], // Observe when 0%, 30%, or 100% is visible
+            }
+        );
+
+        observer.observe(footer);
+
+        const img = document.querySelector('.front img');
+
+// Optional: set max padding so it doesn't grow indefinitely
+const maxPadding = 50; // in px
+const maxScroll = 1000; // adjust based on your page height
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  
+  // Calculate padding proportionally to scrollY
+  const padding = Math.min((scrollY / maxScroll) * maxPadding, maxPadding);
+
+  img.style.paddingLeft = `${padding}px`;
+  img.style.paddingRight = `${padding}px`;
+});
+
     </script>
 </body>
 
