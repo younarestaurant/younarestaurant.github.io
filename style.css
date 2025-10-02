@@ -217,12 +217,13 @@ nav .fa-solid {
 
 .pics-slide {
  display: flex;
+ gap: 4rem;
+ justify-content: center;
   animation: 35s slide infinite linear;
 }
 
 .pics-slide div {
-  width: 300px;
-    vertical-align: middle; /
+    vertical-align: middle; 
 }
 
 .pics-slide img {
@@ -237,6 +238,7 @@ nav .fa-solid {
 .anglais {
     font-size: 1.4rem;
     font-style: italic;
+    text-align: center;
 }
 
 .menu-container {
