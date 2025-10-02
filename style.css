@@ -209,6 +209,7 @@ nav .fa-solid {
   width: 100%;
   padding: 2rem;
   display: flex;
+  gap: 2rem;
 }
 
 .pics:hover .pics-slide {
