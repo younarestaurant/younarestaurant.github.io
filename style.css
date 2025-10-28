@@ -176,6 +176,10 @@ nav.blurred-background {
   font-size: 3rem;
 }
 
+.menu-subtitle {
+  font-size: 2rem;
+}
+
 .imperial {
   font-family: Imperial Script, cursive;
   font-size: 2.5rem;
