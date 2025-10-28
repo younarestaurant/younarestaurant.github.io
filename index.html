@@ -9,448 +9,224 @@
     <meta name="keywords"
         content="You Na, Restaurant français, French Restaurant, French Cuisine, Vientiane, Laos, Southeast Asia">
     <title>You Na Restaurant</title>
-    <link rel="shortcut icon" href="youna-logo-plaid.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="images/youna-logo-plaid.webp" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8efc22d7af.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html" class="home-logo">
-            <img src="black-logo.webp" alt="">
-        </a>
-        <ul id="sidemenu">
-            <li><a href="#about-section" onclick="closemenu()">About</a></li>
-            <li><a href="#menu-section" onclick="closemenu()">Menu</a></li>
-            <li><a href="#gallery-section" onclick="closemenu()">Gallery</a></li>
-            <li><a href="#contact-section" onclick="closemenu()">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-
-        </ul>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    <nav class="blurred-background">
+        <div class="logo-container">
+            <div class="logo-container-left">
+                <img src="images/black-logo.webp" alt="">
+            </div>
+            <div class="mobile-nav-btn">
+                <div class="inner-circle"></div>
+                <div class="inner-circle"></div>
+                <div class="inner-circle"></div>
+                <div class="inner-circle"></div>
+            </div>
+        </div>
+        <div class="links-container">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#menu">Menu</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#contact-section">Contact</a>
+        </div>
+        <div class="btn-container">
+            <a href="#contact-section">Visit Us</a>
+        </div>
     </nav>
-    <header id="header-section">
-        <div class="desktop-nav">
-            <a href="#about-section">About</a>
-            <a href="#menu-section">Menu</a>
-            <div class="logo-container">
-                <img src="youna-logo-plaid.webp" alt="You Na Logo">
-                <!-- <p>Restaurant français</p> -->
+    <div class="site-container">
+        <header>
+            <div class="header-content">
+                <h1>Restaurant Français</h1>
+                <img src="images/youna-front.webp" alt="" class="header-img">
             </div>
-            <a href="#gallery-section">Gallery</a>
-            <a href="#contact-section">Contact</a>
-        </div>
-        <div class="front">
-            <img src="pork-chop.webp" alt="">
-        </div>
-    </header>
-    <main>
-        <section id="about-section">
-            <div class="about-section-inner left">
-                <h2>About</h2>
-                <p>Our choice of colour in the restaurant represents our cultural background and the name represents its
-                    synthesis. 1 Lao, 1 Breton, 1 baby girl growing fast.</p>
-                <p class="about-middle">The blue is the colour called 'Glazik' in
-                    Brittany, the colour of the element that surrounds us, that made us travel the world aboard ships,
-                    the sea, the ocean, the Channel and the Atlantic.</p>
-                <p>The orange suggests the colour of the Buddhist
-                    faith as seen on the monks garments and marigold flowers used for ceremonial times.</p>
+        </header>
+        <div class="divider">
+            <div class="fleur-container">
+                <img src="images/fleur-de-lis.webp" alt="">
+                <img src="images/fleur-de-lis.webp" alt="">
+                <img src="images/fleur-de-lis.webp" alt="">
             </div>
-            <div class="about-section-inner right"><img src="chef.webp" alt="restaurant"></div>
-        </section>
-        <div id="name-section">
-            <img src="black-logo.webp" alt="logo">
-            <p>The name of the restaurant is our daughter's, Youna; From Breton to French meaning Yvette and
-                deconstructed into Lao meaning 'in the rice field'. This place is our little Mandala, our representation
-                in some ways, the completion of our beings as a united, mutually protective and caring family. A
-                metaphor of symbols reflecting unity. </p>
         </div>
-        <section id="menu-section">
-            <!-- Logo Scroll -->
-            <div class="pics">
-                <div class="pics-slide">
-                    <div>
-                        <p class="francais">Les potages</p>
-                        <p class="anglais">Soups</p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Les salades</p>
-                        <p class="anglais">Salads</p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Les poisons</p>
-                        <p class="anglais">Fish</p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Viandes et végétariens</p>
-                        <p class="anglais">Meats and veggies</p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Assiette Végétalien</p>
-                        <p class="anglais">
-                            Vegan Plate
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Le vin blanc</p>
-                        <p class="anglais">
-                            White wine
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Le vin rosé</p>
-                        <p class="anglais">
-                            Rosé wine
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Le vin rouge</p>
-                        <p class="anglais">
-                            Red wine
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Le vin bulle</p>
-                        <p class="anglais">
-                            Bubbly wine
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                </div>
-                <div class="pics-slide">
-                    <div>
-                        <p class="francais">Les potages</p>
-                        <p class="anglais">Soups</p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Les salades</p>
-                        <p class="anglais">Salads</p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Les poisons</p>
-                        <p class="anglais">Fish</p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Viandes et végétariens</p>
-                        <p class="anglais">Meats and veggies</p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Assiette Végétalien</p>
-                        <p class="anglais">
-                            Vegan Plate
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Le vin blanc</p>
-                        <p class="anglais">
-                            White wine
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Le vin rosé</p>
-                        <p class="anglais">
-                            Rosé wine
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Le vin rouge</p>
-                        <p class="anglais">
-                            Red wine
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Le vin bulle</p>
-                        <p class="anglais">
-                            Bubbly wine
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                </div>
-                <div class="pics-slide">
-                    <div>
-                        <p class="francais">Les potages</p>
-                        <p class="anglais">Soups</p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Les salades</p>
-                        <p class="anglais">Salads</p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Les poisons</p>
-                        <p class="anglais">Fish</p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Viandes et végétariens</p>
-                        <p class="anglais">Meats and veggies</p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Assiette Végétalien</p>
-                        <p class="anglais">
-                            Vegan Plate
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Le vin blanc</p>
-                        <p class="anglais">
-                            White wine
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Le vin rosé</p>
-                        <p class="anglais">
-                            Rosé wine
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Le vin rouge</p>
-                        <p class="anglais">
-                            Red wine
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                    <div>
-                        <p class="francais">Le vin bulle</p>
-                        <p class="anglais">
-                            Bubbly wine
-                        </p>
-                    </div>
-                    <div>
-                        <img src="fleur-de-lis.webp" alt="">
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- <section id="menu-section">
-            <div class="menu-container">
+        <section id="menu">
+            <div class="menu-content">
                 <h2>Menu</h2>
-                <div class="menu-contents">
-                    <div class="menu-col">
-                        <div class="menu-item">
-                            <h3>La potage</h3>
-                            <p>Soup</p>
+                <p class="menu-subtitle">Vientiane's finest French dining experience. <span class="imperial">Très délicieux.</span></p>
+                <p>Featured Items:</p>
+                <div class="menu-item-container">
+                    <div class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/g2.webp" alt="">
                         </div>
-                        <div class="menu-item">
-                            <h3>La salade</h3>
-                            <p>Salad</p>
-                        </div>
-                        <div class="menu-item">
-                            <h3>La poisson</h3>
-                            <p>Fish</p>
-                        </div>
-                    </div>
-                    <div class="menu-col">
-                        <div class="menu-item">
-                            <h3>Les viandes / meats</h3>
-                            <p>Steak, duck, pork chop, sausage, chicken</p>
-                        </div>
-                        <div class="menu-item">
-                            <h3>Plat cuisinés végan / vegan dishes</h3>
-                            <p>Tofu, ratatouille</p>
+                        <div class="menu-item-right">
+                            <h3>Pork Chop</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique error molestiae
+                                provident!
+                                Eos, ipsa? Dolorum eos impedit natus necessitatibus quasi?</p>
                         </div>
                     </div>
-                    <div class="menu-col">
-                        <div class="menu-item">
-                            <h3>Le vin blanc</h3>
-                            <p>White wine</p>
+                    <div class="menu-item">
+                        <div class="menu-item-left">
+                            <img src="images/g1.webp" alt="">
                         </div>
-                        <div class="menu-item">
-                            <h3>Le vin rosé</h3>
-                            <p>Rosé wine</p>
+                        <div class="menu-item-right">
+                            <h3>Terrine de Campagne Et Carpaccio de Thon</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique error molestiae
+                                provident!
+                                Eos, ipsa? Dolorum eos impedit natus necessitatibus quasi?</p>
                         </div>
-                        <div class="menu-item">
-                            <h3>Le vin rouge</h3>
-                            <p>Red wine</p>
-                        </div>
-                        <div class="menu-item">
-                            <h3>Le vin bulle</h3>
-                            <p>Bubbly wine</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <section id="gallery-section">
-            <div class="gallery-container">
-                <h2>Gallery</h2>
-                <div class="gallery-wrapper">
-                    <div class="gallery-container-left">
-                        <img src="g1.webp" alt="You Na French dish" loading="lazy">
-                        <img src="g2.webp" alt="You Na French dish" loading="lazy">
-                    </div>
-                    <div class="gallery-container-right">
-                        <img src="g3.webp" alt="You Na French dish" loading="lazy">
-                        <img src="g4.webp" alt="You Na French dish" loading="lazy">
-                    </div>
-                    <div class="gallery-container-left">
-                        <img src="g5.webp" alt="You Na French dish" loading="lazy">
-                        <img src="g6.webp" alt="You Na French dish" loading="lazy">
-                    </div>
-                    <div class="gallery-container-right">
-                        <img src="g7.webp" alt="You Na French dish" loading="lazy">
-                        <img src="g8.webp" alt="You Na French dish" loading="lazy">
                     </div>
                 </div>
 
-            </div>
-            <br>
             </div>
         </section>
-    </main>
-    <footer id="contact-section">
-        <div class="footer-left">
-            <img src="logo-iso.webp" alt="logo" class="footer-logo">
-            <div class="hours">
-                <h3>Hours</h3>
-                <p>Monday: 11:30 - 14:30, 17:30 - 21:30</p>
-                <p>Tuesday: 11:30 - 14:30, 17:30 - 21:30</p>
-                <p>Wednesday: 11:30 - 14:30</p>
-                <p>Thursday: 11:30 - 14:30, 17:30 - 21:30</p>
-                <p>Friday: 11:30 - 14:30, 17:30 - 21:30</p>
-                <p>Saturday: 17:30 - 21:30</p>
-                <p>Sunday: Closed</p>
-                <br>
-                <a href="https://www.facebook.com/YouNa2018/" target="_blank"><i class="fa-brands fa-facebook"></i>You
-                    Na | Vientiane</a>
-                <p><i class="fa-brands fa-whatsapp"></i>+856 20 29 226 465</p>
+        <div class="divider">
+            <div class="fleur-container">
+                <img src="images/fleur-de-lis.webp" alt="">
+                <img src="images/fleur-de-lis.webp" alt="">
+                <img src="images/fleur-de-lis.webp" alt="">
             </div>
-            <p class="copyright">&#169; Copyright You Na Restaurant <span class="year"></span>. All rights reserved.</p>
-            <p class="credit">Blue plaid credit by hc hedgehog at <a
-                    href="https://www.vecteezy.com/vector-art/27307436-navy-blue-plaid-pattern-background-plaid-pattern-background-plaid-background-seamless-pattern-for-backdrop-decoration-gift-wrapping-gingham-tablecloth-blanket-tartan">Vecteezy.com</a>
-            </p>
         </div>
-        <div class="footer-right">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d474.42504411392446!2d102.61652678246851!3d17.960101358537962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31246979dac60eb1%3A0xb08293f13736932e!2zWW91IE5hIC0g7ZSE656R7IqkIOyalOumrCAtIOazleWci-iPnA!5e0!3m2!1sen!2sus!4v1758223845024!5m2!1sen!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section id="gallery">
+            <div class="gallery-content">
+                <h2>Gallery</h2>
+                <div class="gallery-container">
+                    <div class="gallery-img"><img src="images/g3.webp" alt=""></div>
+                    <div class="gallery-img"><img src="images/g4.webp" alt=""></div>
+                    <div class="gallery-img"><img src="images/g5.webp" alt=""></div>
+                    <div class="gallery-img"><img src="images/g6.webp" alt=""></div>
+                    <div class="gallery-img"><img src="images/g7.webp" alt=""></div>
+                    <div class="gallery-img"><img src="images/g8.webp" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <div class="divider">
+            <div class="fleur-container">
+                <img src="images/fleur-de-lis.webp" alt="">
+                <img src="images/fleur-de-lis.webp" alt="">
+                <img src="images/fleur-de-lis.webp" alt="">
+            </div>
         </div>
+        <section id="reviews-section">
+            <h2>Reviews</h2>
+            <div class="reviews-wrapper">
+                <article class="review-card">
+                    <!-- <img src="images/somchai.jpg" alt=""> -->
+                    <div class="star-container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="name">Jane G.</h3>
+                    <p class="review">So tasty! You've gotta try this! I've been telling all my friends to come try it.
+                        Hands down my favorite French restaurant in Vientiane.
+                        The owner is the head chef, and their pudding I could eat it every single day!</p>
+                </article>
+                <article class="review-card">
+                    <!-- <img src="images/ellen.jpg" alt=""> -->
+                    <div class="star-container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="name">Roberto S.</h3>
+                    <p class="review">We had a wonderful dinner at You Na. The food was exceptionally good, a highlight
+                        of our entire trip in Southeast Asia. The chef uses fresh, locally sourced ingredients. We
+                        enjoyed dishes from the weekly menu, which were very reasonably priced. The staff
+                        and owner were super attentive and friendly. I would definitely go back the next time we are in
+                        Vientiane.</p>
+                </article>
+                <article class="review-card">
+                    <!-- <img src="images/mateus.jpg" alt=""> -->
+                    <div class="star-container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="name">Ibo R.</h3>
+                    <p class="review">I had an incredible dining experience here. The food was authentic and truly stood
+                        out. The presentation was also impressive, with great attention to detail. What really made the
+                        visit even more memorable was the chef, who was a genuinely kind and welcoming person. You can
+                        tell he cares deeply about his craft. On top of that, the quality-to-price ratio was
+                        outstanding. This place is a hidden gem.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <div class="divider">
+            <div class="fleur-container">
+                <img src="images/fleur-de-lis.webp" alt="">
+                <img src="images/fleur-de-lis.webp" alt="">
+                <img src="images/fleur-de-lis.webp" alt="">
+            </div>
+        </div>
+        <footer id="contact-section">
+            <div class="footer-left">
+                <img src="images/black-logo.webp" alt="logo" class="footer-logo">
+                <div class="hours">
+                    <h3>Hours</h3>
+                    <p>Monday: 11:30 - 14:30, 17:30 - 21:30</p>
+                    <p>Tuesday: 11:30 - 14:30, 17:30 - 21:30</p>
+                    <p>Wednesday: 11:30 - 14:30</p>
+                    <p>Thursday: 11:30 - 14:30, 17:30 - 21:30</p>
+                    <p>Friday: 11:30 - 14:30, 17:30 - 21:30</p>
+                    <p>Saturday: 17:30 - 21:30</p>
+                    <p>Sunday: Closed</p>
+                    <br>
+                    <a href="https://www.facebook.com/YouNa2018/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i>You
+                        Na | Vientiane</a>
+                    <p><i class="fa-brands fa-whatsapp"></i>+856 20 29 226 465</p>
+                </div>
+                <p class="copyright">&#169; Copyright You Na Restaurant <span class="year"></span>. All rights reserved.
+                </p>
+                <p class="credit">Blue plaid credit by hc hedgehog at <a
+                        href="https://www.vecteezy.com/vector-art/27307436-navy-blue-plaid-pattern-background-plaid-pattern-background-plaid-background-seamless-pattern-for-backdrop-decoration-gift-wrapping-gingham-tablecloth-blanket-tartan">Vecteezy.com</a>
+                </p>
+            </div>
+            <div class="footer-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d474.42504411392446!2d102.61652678246851!3d17.960101358537962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31246979dac60eb1%3A0xb08293f13736932e!2zWW91IE5hIC0g7ZSE656R7IqkIOyalOumrCAtIOazleWci-iPnA!5e0!3m2!1sen!2sus!4v1758223845024!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-    </footer>
+        </footer>
+    </div>
     <script>
-        function openmenu() {
-            sidemenu.style.right = "0px";
+        const body = document.querySelector("body");
+        const mobileNavBtn = document.querySelector(".mobile-nav-btn");
+        const navMenu = document.querySelector(".blurred-background");
+        const navLinks = document.querySelectorAll(".nav-link");
+        const innerCircles = document.querySelectorAll(".inner-circle");
+        mobileNavBtn.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            mobileNavBtn.classList.toggle("active");
+            body.classList.toggle("no-scroll");
+            innerCircles.forEach(circle => {
+                circle.classList.toggle("active");
+            });
+        });
 
-        }
+        navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                navMenu.classList.remove("active");
+            });
+        });
 
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-
-        //FOOTER COPYRIGHT TEXT
+        // FOOTER COPYRIGHT TEXT
         const year = document.querySelector(".year");
         const currentYear = new Date().getFullYear();
-
         year.innerHTML = currentYear;
-
-        const footer = document.querySelector('#contact-section');
-
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.intersectionRatio >= 0.3) {
-                    footer.classList.add('in-view');
-                } else {
-                    footer.classList.remove('in-view');
-                }
-            },
-            {
-                threshold: [0, 0.3, 1], // Observe when 0%, 30%, or 100% is visible
-            }
-        );
-
-        observer.observe(footer);
-
-        const img = document.querySelector('.front img');
-
-// Optional: set max padding so it doesn't grow indefinitely
-const maxPadding = 50; // in px
-const maxScroll = 1000; // adjust based on your page height
-
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-  
-  // Calculate padding proportionally to scrollY
-  const padding = Math.min((scrollY / maxScroll) * maxPadding, maxPadding);
-
-  img.style.paddingLeft = `${padding}px`;
-  img.style.paddingRight = `${padding}px`;
-});
-
     </script>
 </body>
 
