@@ -13,7 +13,12 @@ html {
 }
 
 body {
-  background-color: rgb(24, 75, 156);
+  /* background-color: rgb(24, 75, 156); */
+  background-image: url(images/bkgd.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -71,6 +76,11 @@ nav.blurred-background {
   text-decoration: none;
   margin: 0 1rem;
   font-size: 1.5rem;
+  transition: text-decoration 0.2s ease-in-out;
+}
+
+.links-container a:hover {
+  text-decoration: underline;
 }
 
 .btn-container a {
@@ -82,6 +92,11 @@ nav.blurred-background {
   color: #000;
   font-weight: bold;
   text-decoration: none;
+  transition: filter 0.2s ease-in-out;
+}
+
+.btn-container a:hover {
+  filter: brightness(85%);
 }
 
 .site-container {
@@ -313,6 +328,10 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+  body {
+    background-image: none;
+    background-color: rgb(24, 75, 156);
+  }
   .site-container {
     margin-top: 100px;
     width: 95%;
@@ -438,7 +457,6 @@ footer a:hover {
 
   .menu-subtitle {
     text-align: center;
-
   }
 
   .menu-item {
