@@ -25,7 +25,7 @@ body {
   width: 100%;
 }
 
-.fixed-bkgd {
+ .fixed-bkgd {
   background-image: url(images/bkgd.webp);
   background-position: center;
   background-size: cover;
@@ -35,8 +35,8 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1;
-}
+  /* z-index: -1; */
+} 
 
 nav.blurred-background {
   display: flex !important;
@@ -347,6 +347,13 @@ footer a:hover {
     background-image: none;
     background-color: #ececec;
   }
+
+  .fixed-bkgd {
+    background-size: contain;
+    background-attachment: scroll;
+    background-repeat: repeat;
+  }
+
   .site-container {
     margin-top: 100px;
     width: 95%;
