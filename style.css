@@ -25,7 +25,11 @@ body {
   width: 100%;
 }
 
- .fixed-bkgd {
+body.no-scroll {
+  overflow: hidden;
+}
+
+.fixed-bkgd {
   background-image: url(images/bkgd.webp);
   background-position: center;
   background-size: cover;
@@ -36,7 +40,7 @@ body {
   top: 0;
   left: 0;
   /* z-index: -1; */
-} 
+}
 
 nav.blurred-background {
   display: flex !important;
