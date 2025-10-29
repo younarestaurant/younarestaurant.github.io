@@ -14,15 +14,28 @@ html {
 
 body {
   /* background-color: rgb(24, 75, 156); */
+  /* background-image: url(images/bkgd.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.fixed-bkgd {
   background-image: url(images/bkgd.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 nav.blurred-background {
@@ -245,6 +258,8 @@ nav.blurred-background {
   align-items: start;
   padding: 2rem;
   gap: 0.5rem;
+  border-radius: 1rem;
+  line-height: 1.3;
 }
 
 .review-card img {
@@ -330,7 +345,7 @@ footer a:hover {
 @media (max-width: 768px) {
   body {
     background-image: none;
-    background-color: rgb(24, 75, 156);
+    background-color: #ececec;
   }
   .site-container {
     margin-top: 100px;
